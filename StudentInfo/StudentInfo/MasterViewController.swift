@@ -30,7 +30,36 @@ class MasterViewController: UITableViewController, UISearchResultsUpdating, UIIm
         // Do any additional setup after loading the view, typically from a nib.
         
         //initializa information for students
-        students = [StudentModel(id: "1", image: "TC Dong", name: "TC Dong", info: "The infomation for TC Dong is as follows: (1) comes from South Africa and (2) the degree and program: Bachelors in ECE and (3) the programming languages are Java and C and (4) the interest : Violin and  Figure Skating"),StudentModel(id: "2", image: "Weidong Duan", name: "Weidong Duan", info: "The infomation for Weidong Duan is as follows: (1) comes from China and (2) the degree and program: Masters in ECE and (3) the programming languages are Java and C++ and (4) the interest : Swimming and movies"),StudentModel(id: "2", image: "Shuai Fu", name: "Shuai Fu", info: "The infomation for Shuai Fu is as follows: (1) comes from China and (2) the degree and program: Masters in ECE and (3) the programming languages are Java and C and (4) the interest : Table tennis and Piano"),StudentModel(id: "2", image: "Shaoyi Han", name: "Shaoyi Han", info: "The infomation for Shaoyi Han is as follows: (1) comes from China and (2) the degree and program: Masters in ECE and (3) the programming languages are C and C++ and (4) the interest : Piano and Dancing"),StudentModel(id: "2", image: "Rahul Harikrishnan", name: "Rahul Harikrishnan", info: "The infomation for Rahul Harikrishnan is as follows: (1) comes from Washington and (2) the degree and program: Bachelors in ECE and CS and (3) the programming languages are Java and Python and (4) the interest : Walking and Hiking"),StudentModel(id: "2", image: "Wenting Hu", name: "Wenting Hu", info: "The infomation for Wenting Hu is as follows: (1) comes from China and (2) the degree and program: Masters in ECE and (3) the programming languages are C and C++ and (4) the interest : Piano and Computer Games"),StudentModel(id: "2", image: "Jingxiong Huang", name: "Jingxiong Huang", info: "The infomation for Jingxiong Huang is as follows: (1) comes from China and (2) the degree and program: Masters in ECE and (3) the programming languages are C++ and Python and (4) the interest : Swimming and Mobile Phone Games"),StudentModel(id: "2", image: "Zhuo Jia", name: "Zhuo Jia", info: "The infomation for Zhuo Jia is as follows: (1) comes from China and (2) the degree and program: Masters in ECE and (3) the programming languages are Java and C++ and (4) the interest : Cooking and Photoshooting"),StudentModel(id: "2", image: "Deyu Jiao", name: "Deyu Jiao", info: "The infomation for Deyu Jiao is as follows: (1) comes from China and (2) the degree and program: Information Engineering and (3) the programming languages are Java and C++ and (4) the interest : Choir and Piano"),StudentModel(id: "2", image: "Allan Kiplagat", name: "Allan Kiplagat", info: "The infomation for Allan Kiplagat is as follows: (1) comes from Kenya and (2) the degree and program: Masters in ECE and (3) the programming languages are Java and Ruby and (4) the interest : Guitar and Jogging"),StudentModel(id: "2", image: "Ashwin Kommajesula", name: "Ashwin Kommajesula", info: "The infomation for Ashwin Kommajesula is as follows: (1) comes from China and (2) the degree and program: Masters in ECE and (3) the programming languages are Java and C and (4) the interest : Cooking"),StudentModel(id: "2", image: "Austin Kyker", name: "Austin Kyker", info: "The infomation for Austin Kyker is as follows: (1) comes from China and (2) the degree and program: Masters in ECE and (3) the programming languages are Java and C and (4) the interest : Basketball"),StudentModel(id: "2", image: "Hao Li", name: "Hao Li", info: "The infomation for Hao Li is as follows: (1) comes from China and (2) the degree and program: Masters in ECE and (3) the programming languages are Java and C++ and (4) the interest : Basketball and Movie"),StudentModel(id: "2", image: "Jiancheng Li", name: "Jiancheng Li", info: "The infomation for Jiancheng Li is as follows: (1) comes from China and (2) the degree and program: Masters in ECE and (3) the programming languages are Java and C and (4) the interest : Swimming and Computer games"),StudentModel(id: "2", image: "Guoshan Liu", name: "Guoshan Liu", info: "The infomation for Guoshan Liu is as follows: (1) comes from China and (2) the degree and program: Masters in ECE and (3) the programming languages are Java and C++ and (4) the interest : Piano and Music"),StudentModel(id: "2", image: "Mingming Lu", name: "Mingming Lu", info: "The infomation for Mingming Lu is as follows: (1) comes from China and (2) the degree and program: Masters in ECE and (3) the programming languages are Java and C++ and (4) the interest : Basketball and Workout"),StudentModel(id: "2", image: "Xin Lu", name: "Xin Lu",info: "The infomation for Xin Lu is as follows: (1) comes from China and (2) the degree and program: Masters in ECE and (3) the programming languages are C++ and GO and (4) the interest : Running and Table Tennis"),StudentModel(id: "2", image: "Chase Malik", name: "Chase Malik", info: "The infomation for Chase Malik is as follows: (1) comes from Missouri and (2) the degree and program: Bachelors in ECE and CS and (3) the programming languages are Java and C and (4) the interest : Video games and Watch sports"),StudentModel(id: "2", image: "Julien Mansier", name: "Julien Mansier", info: "The infomation for Julien Mansier is as follows: (1) comes from Florida and (2) the degree and program: Masters in ECE and (3) the programming languages are Java and C and (4) the interest : Football and Beer"),StudentModel(id: "2", image: "Greg McKeon", name: "Greg McKeon",info: "The infomation for Greg McKeon is as follows: (1) comes from New York and (2) the degree and program: Bachelors in ECE and (3) the programming languages are Java and JavaScript and (4) the interest : Netflix and Baseball"),StudentModel(id: "2", image: "Weichen Ning", name: "Weichen Ning",info: "The infomation for Weichen Ning is as follows: (1) comes from China and (2) the degree and program: Masters in ECE and (3) the programming languages are C and C++ and (4) the interest : Badminton and Movie"),StudentModel(id: "2", image: "Zachary Podbela", name: "Zachary Podbela",info: "The infomation for Zachary Podbela is as follows: (1) comes from New York and (2) the degree and program: Bachelors in ECE and (3) the programming languages are Java and Python and (4) the interest : Music and Flying"),StudentModel(id: "2", image: "Scotty Shaw", name: "Scotty Shaw", info: "The infomation for Scotty Shaw is as follows: (1) comes from Texas and (2) the degree and program: Bachelors in Comp Sci and (3) the programming languages are Java and Object C and (4) the interest : Basketball and Traveling"),StudentModel(id: "2", image: "Emmanuel Shiferaw", name: "Emmanuel Shiferaw",info: "The infomation for Emmanuel Shiferaw is as follows: (1) comes from North Carolina and (2) the degree and program: Bachelors in ECE and (3) the programming languages are Java and C# and (4) the interest : Reading and Football"),StudentModel(id: "2", image: "Weiqi Wei", name: "Weiqi Wei",info: "The infomation for Weiqi Wei is as follows: (1) comes from China and (2) the degree and program: Masters in ECE and (3) the programming languages are Java and C++ and (4) the interest : Soccer and table Tennis"),StudentModel(id: "2", image: "Hao Wu", name: "Hao Wu", info: "The infomation for Hao Wu is as follows: (1) comes from China and (2) the degree and program: Masters in ECE and (3) the programming languages are Java and C and (4) the interest : Tennis and Movie"),StudentModel(id: "2", image: "Boyang Xu", name: "Boyang Xu", info: "The infomation for Boyang Xu is as follows: (1) comes from China and (2) the degree and program: Masters in CS and (3) the programming languages are Java and C and (4) the interest : Soccer and Basketball"),StudentModel(id: "2", image: "Shuai Yuan", name: "Shuai Yuan", info: "The infomation for Shuai Yuan is as follows: (1) comes from China and (2) the degree and program: Masters in ECE and (3) the programming languages are Java and C and (4) the interest : Basketball and Computer Games"),StudentModel(id: "2", image: "Ran Zhou", name: "Ran Zhou",info: "The infomation for Ran Zhou is as follows: (1) comes from China and (2) the degree and program: Master of Engineering and (3) the programming languages are C and C++ and (4) the interest : Violin and Swimming"),StudentModel(id: "2", image: "Hong Jin", name: "Hong Jin", info: "The infomation for Hong Jin is as follows: (1) comes from China and (2) the degree and program: Masters in ECE and (3) the programming languages are C and C++ and (4) the interest : Basketball and Computer games")]
+        students = [StudentModel(name:"TC Dong", place:"South Africa", degree:"ECE/CS Senior", interests:"violin and figure skating", exp:true, pLang:"Java and C",work:"IBM"),
+            StudentModel(name:"Weidong Duan", place:"China", degree:"ECE second year Masters", interests:"swimming and watching movies", exp:false, pLang:"Java and C++", work:nil),
+            StudentModel(name:"Shuai Fu", place:"China", degree:"ECE second year Masters", interests:"table tennis and piano", exp:false, pLang:"Java and C", work:nil),
+            StudentModel(name:"Shaoyi Han", place:"China", degree:"ECE second year Masters", interests:"piano and dancing", exp:false, pLang:"C and C++", work:nil),
+            StudentModel(name:"Rahul Harikrishnan", place:"Seattle, Washington", degree:"ECE/CS Senior", interests:"cricket, walking and hiking", exp: true, pLang:"Java and Python", work:"AppDeal"),
+            StudentModel(name: "Wenting Hu", place: "China", degree:"ECE second year Masters", interests: "piano and video games", exp: true, pLang: "C and C++", work: "Intelligent water meters"),
+            StudentModel(name:"Jingxiong Huang", place: "China", degree: "ECE second year Masters", interests: "swimming and mobile games", exp: false, pLang: "C++ and Python", work:nil),
+            StudentModel(name:"Zhuo Jia", place: "China", degree: "ECE second year Masters", interests: "cooking and photography", exp: true, pLang: "Java and C++", work: "Chinese startup"),
+            StudentModel(name:"Deyu Jiao", place: "China", degree: "ECE second year Masters", interests: "choir and piano", exp: true, pLang: "Java and C++", work: "Cloud based address book"),
+            StudentModel(name:"Hong Jin", place: "China", degree: "ECE second year Masters", interests: "basketball and playing computer games", exp: false, pLang: "C and C++", work:nil),
+            StudentModel(name:"Allan Kiplagat", place: "Kenya", degree: "ECE/CS", interests: "guitar and jogging", exp: true, pLang: "Java and Ruby", work:"Top secret internship"),
+            StudentModel(name:"Ashwin Kommajesula", place: "India then moved to New Jersey", degree: "ECE/CS Senior", interests: "violin and cooking", exp: true, pLang: "Java and C", work: "Quicken Loans"),
+            StudentModel(name: "Austin Kyker", place: "Indiana, Indianapolis", degree: "ECE/CS Senior", interests: "basketball and golf", exp: true, pLang: "Java and Javascript", work: "Ebay"),
+            StudentModel(name:"Hao Li", place: "China", degree: "ECE second year Masters", interests: "basketball and watching movies", exp: false, pLang: "Java and C++", work:nil),
+            StudentModel(name: "Jiancheng Li", place: "China", degree: "ECE second year Masters", interests: "swimming and playing computer games", exp: false, pLang: "Java and C", work:nil),
+            StudentModel(name:"Guoshan Liu", place: "China", degree: "ECE second year Masters", interests: "piano and listening to music", exp: false, pLang: "Java and C++", work:nil),
+            StudentModel(name:"Mingming Lu", place: "China", degree: "ECE second year Masters", interests: "basketball and working out", exp: false, pLang: "Java and C", work:nil),
+            StudentModel(name:"Xin Lu", place: "China", degree: "ECE second year Masters", interests: "running and table tennis", exp: true, pLang: "C++ and Go", work: "Cloud computing"),
+            StudentModel(name:"Chase Malik", place: "Kansas City, Missouri", degree: "ECE/CS/Math Senior", interests: "video games and watching sports", exp: true, pLang: "Java and C", work: "Sporting Innovation"),
+            StudentModel(name:"Julien Mansier", place: "Orlando, Florida", degree: "ECE professional", interests: "Football and brewing beer", exp: true, pLang: "Java and C++", work: "the Auto industry"),
+            StudentModel(name:"Greg McKeon", place: "New York", degree: "ECE/CS", interests: "Netflix and baseball", exp: true, pLang: "Java and Javascript", work: "American Express"),
+            StudentModel(name:"Weichen Ning", place: "China", degree: "ECE second year Masters", interests: "badminton and watching movies", exp: true, pLang: "C and C++", work: "Cisco"),
+            StudentModel(name: "Zachary Podbela", place: "New York", degree: "ECE/CS Senior", interests: "listening to music and flying", exp: true, pLang: "Java and Python", work: "Capital One"),
+            StudentModel(name:"Scotty Shaw", place: "Texas", degree: "CS Senior", interests: "basketball", exp:    true, pLang: "Java and Objective C", work: "HackWare, LLC"),
+            StudentModel(name:"Emmanuel Shiferaw", place: "Ethiopia then moved to Raleigh", degree: "ECE/CS Senior",interests: "reading and football", exp: true, pLang: "Java and C#", work: "Duke DiVE lab"),
+            StudentModel(name:"Weiqi Wei", place: "China", degree: "ECE second year Masters", interests: "soccer and table tennis", exp: false, pLang: "Java and C++", work:nil),
+            StudentModel(name:"Hao Wu", place: "China", degree: "ECE second year Masters", interests: "tennis and watching movies", exp: true, pLang: "Java and C", work: "Logistic Corp"),
+            StudentModel(name:"Boyang Xu", place: "China", degree: "CS second year Masters", interests: "soccer and basketball", exp: false, pLang: "Java and C", work:nil),
+            StudentModel(name:"Shuai Yuan", place: "China", degree: "ECE second year Masters", interests: "basketball and playing computer games", exp: false, pLang: "Java and C", work:nil),
+            StudentModel(name:"Ran Zhou", place: "China", degree: "ECE second year Masters", interests: "violin and swimming", exp: true, pLang: "C and C++", work: "Snyder Electric, China")]
         
         self.resultSearchController = ({
             let searchcontroller = UISearchController(searchResultsController: nil)
@@ -52,7 +81,7 @@ class MasterViewController: UITableViewController, UISearchResultsUpdating, UIIm
         self.navigationItem.rightBarButtonItem = addButton
         if let split = self.splitViewController {
             let controllers = split.viewControllers
-            self.detailViewController = controllers[controllers.count-1].topViewController as? DetailViewController
+            self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
     }
     
@@ -60,7 +89,7 @@ class MasterViewController: UITableViewController, UISearchResultsUpdating, UIIm
     {
         filteredstudents.removeAll(keepCapacity: false)
         
-        let searchPredicate = NSPredicate(format: "self.name contains[c] %@", searchController.searchBar.text)
+        let searchPredicate = NSPredicate(format: "self.name contains[c] %@", searchController.searchBar.text!)
         let array = (students as NSArray).filteredArrayUsingPredicate(searchPredicate)
         filteredstudents = array as! [StudentModel]
         
@@ -73,8 +102,8 @@ class MasterViewController: UITableViewController, UISearchResultsUpdating, UIIm
     }
 
     func insertNewObject(sender: AnyObject) {//insertnew here
-        var textField = UITextField()
-        var newStudent: StudentModel = StudentModel(id:"",image:"",name: "",info:"")
+        _ = UITextField()
+        let newStudent: StudentModel = StudentModel(name:"", place:"", degree:"", interests:"", exp:false, pLang:"", work:nil)
         students.insert(newStudent, atIndex: 0)
         let indexPath = NSIndexPath(forRow: 0, inSection: 0)
         self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
@@ -84,13 +113,14 @@ class MasterViewController: UITableViewController, UISearchResultsUpdating, UIIm
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
-            if let indexPath = self.tableView.indexPathForSelectedRow() {
+            let indexPath = self.tableView.indexPathForSelectedRow!
+            //if let indexPath = self.tableView.indexPathForSelectedRow! { <- this was giving an error
                 //let student = students[indexPath.row]
                 var student: StudentModel
                 //display search results
-                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
+                let controller = segue.destinationViewController as! DetailViewController
                 if (self.resultSearchController.active) {
-                    student = filteredstudents[indexPath.row]
+                    student = self.filteredstudents[indexPath.row]
                 }
                 else {
                     student = students[indexPath.row]
@@ -100,7 +130,7 @@ class MasterViewController: UITableViewController, UISearchResultsUpdating, UIIm
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
-        }
+        //}
     }
 
     
@@ -116,12 +146,12 @@ class MasterViewController: UITableViewController, UISearchResultsUpdating, UIIm
             return self.filteredstudents.count
         }
         else {
-        return students.count
+            return students.count
         }
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
         //let object = objects[indexPath.row] as! NSDate
         //cell.textLabel!.text = object.description
@@ -140,7 +170,7 @@ class MasterViewController: UITableViewController, UISearchResultsUpdating, UIIm
         else {
             cell.accessoryType = UITableViewCellAccessoryType.None
         }
-        if (student.name == "Shuai Yuan" || student.name == "TC Dong" || student.name == "Ran Zhou") {    //highlight here
+        if (student.name == "Shuai Yuan" || student.name == "TC Dong" || student.name == "Ran Zhou") {    //highlight
             cell.textLabel!.text = student.name
             cell.textLabel?.textColor = UIColor.redColor()
         }
@@ -148,7 +178,6 @@ class MasterViewController: UITableViewController, UISearchResultsUpdating, UIIm
             cell.textLabel!.text = student.name
             cell.textLabel?.textColor = UIColor.blackColor()
         }
-
         return cell
     }
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

@@ -11,9 +11,13 @@ import UIKit
 class DetailViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var imageView : UIImageView!
+    @IBOutlet weak var originText : UITextField!
+    @IBOutlet weak var educationText : UITextField!
+    @IBOutlet weak var hobbieText : UITextField!
+    @IBOutlet weak var languageText : UITextField!
+    @IBOutlet weak var workText : UITextField!
 
-    @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var imageView: UIImageView!
     var student : StudentModel?
 
     var detailItem: AnyObject? {
@@ -38,10 +42,32 @@ class DetailViewController: UIViewController,UIImagePickerControllerDelegate, UI
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        var image = UIImage(named: student?.name ?? "")
-        imageView.image = image
-        textView.text = student?.info
+        self.title = student?.name
+        
+        let image = UIImage(named: (student?.name ?? ""+".JPG"))
+        imageView.image = image;
+        originText.text = student?.placeOfOrigin
+        originText.userInteractionEnabled = false
+        originText.textAlignment = NSTextAlignment.Center
+        educationText.text =  student?.degree
+        educationText.userInteractionEnabled = false
+        educationText.textAlignment = NSTextAlignment.Center
+        hobbieText.text = student?.hobbie
+        hobbieText.userInteractionEnabled = false
+        hobbieText.textAlignment = NSTextAlignment.Center
+        languageText.text = student?.programmingLang
+        languageText.userInteractionEnabled = false
+        languageText.textAlignment = NSTextAlignment.Center
+        if student!.workExp{
+            workText.text = student?.workPlace
+        } else{
+            workText.text = "None"
+        }
+        workText.userInteractionEnabled = false
+        workText.textAlignment = NSTextAlignment.Center
+        
+
+
     
         self.configureView()
     }
@@ -49,6 +75,8 @@ class DetailViewController: UIViewController,UIImagePickerControllerDelegate, UI
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+        
+
 
     
 // integration with photo library
@@ -69,7 +97,7 @@ class DetailViewController: UIViewController,UIImagePickerControllerDelegate, UI
         // Dismiss the picker if the user canceled.
         dismissViewControllerAnimated(true, completion: nil)
     }
-    
+    /*
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
         // The info dictionary contains multiple representations of the image, and this uses the original.
         let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
@@ -79,9 +107,7 @@ class DetailViewController: UIViewController,UIImagePickerControllerDelegate, UI
         //student!.image = selectedImage.description
         // Dismiss the picker.
         dismissViewControllerAnimated(true, completion: nil)
-    }
-
-
+    }*/
 
 }
 
