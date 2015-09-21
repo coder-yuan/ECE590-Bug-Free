@@ -44,7 +44,7 @@ class DetailViewController: UIViewController,UIImagePickerControllerDelegate, UI
         super.viewDidLoad()
         self.title = student?.name
         
-        let image = UIImage(named: (student?.name ?? ""+".JPG"))
+        var image = UIImage(named: (student?.name ?? ""))//+".JPG"))
         imageView.image = image;
         originText.text = student?.placeOfOrigin
         originText.userInteractionEnabled = false
@@ -58,7 +58,8 @@ class DetailViewController: UIViewController,UIImagePickerControllerDelegate, UI
         languageText.text = student?.programmingLang
         languageText.userInteractionEnabled = false
         languageText.textAlignment = NSTextAlignment.Center
-        if student!.workExp{
+        //if student!.workExp{
+        if student != nil{
             workText.text = student?.workPlace
         } else{
             workText.text = "None"

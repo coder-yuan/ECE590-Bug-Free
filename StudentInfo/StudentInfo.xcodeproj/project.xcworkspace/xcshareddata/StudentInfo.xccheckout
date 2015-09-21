@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5FEA7ABD-9BE2-4155-B271-71A3ECECAF03</string>
+	<key>IDESourceControlProjectName</key>
+	<string>StudentInfo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C363CD4E0BED99149A3468D08E9FB649A48D2C11</key>
+		<string>https://github.com/coder-yuan/ECE590-Bug-Free</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>StudentInfo/StudentInfo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C363CD4E0BED99149A3468D08E9FB649A48D2C11</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/coder-yuan/ECE590-Bug-Free</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C363CD4E0BED99149A3468D08E9FB649A48D2C11</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C363CD4E0BED99149A3468D08E9FB649A48D2C11</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ECE590-Bug-Free</string>
+		</dict>
+	</array>
+</dict>
+</plist>

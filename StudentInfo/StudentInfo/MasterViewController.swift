@@ -113,12 +113,13 @@ class MasterViewController: UITableViewController, UISearchResultsUpdating, UIIm
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
-            let indexPath = self.tableView.indexPathForSelectedRow!
-            //if let indexPath = self.tableView.indexPathForSelectedRow! { <- this was giving an error
+            //let indexPath = self.tableView.indexPathForSelectedRow!
+            if let indexPath = self.tableView.indexPathForSelectedRow() { //<- this was giving an; error
                 //let student = students[indexPath.row]
                 var student: StudentModel
                 //display search results
-                let controller = segue.destinationViewController as! DetailViewController
+                //let controller = segue.destinationViewController as! DetailViewController
+                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
                 if (self.resultSearchController.active) {
                     student = self.filteredstudents[indexPath.row]
                 }
@@ -130,7 +131,7 @@ class MasterViewController: UITableViewController, UISearchResultsUpdating, UIIm
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
-        //}
+        }
     }
 
     
@@ -151,7 +152,7 @@ class MasterViewController: UITableViewController, UISearchResultsUpdating, UIIm
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
 
         //let object = objects[indexPath.row] as! NSDate
         //cell.textLabel!.text = object.description
@@ -192,7 +193,7 @@ class MasterViewController: UITableViewController, UISearchResultsUpdating, UIIm
         student.check = true
         tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None)
         
-        
+        //performSegueWithIdentifier("showDetail", sender: self)
     }
 
 
