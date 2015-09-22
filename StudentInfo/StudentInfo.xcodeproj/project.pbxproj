@@ -26,6 +26,8 @@
 		3E627B081BB09E130008F348 /* DrawingforSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E627B071BB09E130008F348 /* DrawingforSecond.swift */; };
 		3E627B0A1BB09E380008F348 /* DrawingforThird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E627B091BB09E380008F348 /* DrawingforThird.swift */; };
 		3E627B0C1BB09E4F0008F348 /* DrawingforFourth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E627B0B1BB09E4F0008F348 /* DrawingforFourth.swift */; };
+		533957311BB0F8ED00B64739 /* DrawingforSecond2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533957301BB0F8ED00B64739 /* DrawingforSecond2.swift */; };
+		533957331BB0FADF00B64739 /* Für Elise.wav in Resources */ = {isa = PBXBuildFile; fileRef = 533957321BB0FADF00B64739 /* Für Elise.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		3E627B071BB09E130008F348 /* DrawingforSecond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingforSecond.swift; sourceTree = "<group>"; };
 		3E627B091BB09E380008F348 /* DrawingforThird.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingforThird.swift; sourceTree = "<group>"; };
 		3E627B0B1BB09E4F0008F348 /* DrawingforFourth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingforFourth.swift; sourceTree = "<group>"; };
+		533957301BB0F8ED00B64739 /* DrawingforSecond2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingforSecond2.swift; sourceTree = "<group>"; };
+		533957321BB0FADF00B64739 /* Für Elise.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Für Elise.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +108,13 @@
 			isa = PBXGroup;
 			children = (
 				3E627AFD1BB0866D0008F348 /* addViewController.swift */,
-				3E627AF71BB075AE0008F348 /* SecondViewController.swift */,
 				3E37FA141BABA3440017F968 /* AppDelegate.swift */,
 				3E37FA161BABA3440017F968 /* MasterViewController.swift */,
+				533957321BB0FADF00B64739 /* Für Elise.wav */,
 				3E37FA181BABA3440017F968 /* DetailViewController.swift */,
 				3E37FA1A1BABA3440017F968 /* Main.storyboard */,
 				1F64458D1BB0D2C6002283EF /* CustomHeaderCell.swift */,
+				3E627AF71BB075AE0008F348 /* SecondViewController.swift */,
 				3E627AFF1BB0992F0008F348 /* ThirdViewController.swift */,
 				3E627B031BB099470008F348 /* FourthViewController.swift */,
 				3E37FA1D1BABA3440017F968 /* Images.xcassets */,
@@ -127,6 +132,7 @@
 			children = (
 				3E37FA361BABA9C20017F968 /* StudentModel.swift */,
 				3E37FA131BABA3440017F968 /* Info.plist */,
+				533957301BB0F8ED00B64739 /* DrawingforSecond2.swift */,
 				3E627B071BB09E130008F348 /* DrawingforSecond.swift */,
 				3E627B091BB09E380008F348 /* DrawingforThird.swift */,
 				3E627B0B1BB09E4F0008F348 /* DrawingforFourth.swift */,
@@ -235,6 +241,7 @@
 				3E627AFA1BB075AE0008F348 /* SecondViewController.xib in Resources */,
 				3E37FA1C1BABA3440017F968 /* Main.storyboard in Resources */,
 				3E37FA211BABA3440017F968 /* LaunchScreen.xib in Resources */,
+				533957331BB0FADF00B64739 /* Für Elise.wav in Resources */,
 				3E627B021BB0992F0008F348 /* ThirdViewController.xib in Resources */,
 				3E627B061BB099470008F348 /* FourthViewController.xib in Resources */,
 				3E37FA1E1BABA3440017F968 /* Images.xcassets in Resources */,
@@ -264,6 +271,7 @@
 				3E627B011BB0992F0008F348 /* ThirdViewController.swift in Sources */,
 				3E627B051BB099470008F348 /* FourthViewController.swift in Sources */,
 				3E627AF91BB075AE0008F348 /* SecondViewController.swift in Sources */,
+				533957311BB0F8ED00B64739 /* DrawingforSecond2.swift in Sources */,
 				3E627AFE1BB0866D0008F348 /* addViewController.swift in Sources */,
 				3E627B0C1BB09E4F0008F348 /* DrawingforFourth.swift in Sources */,
 				3E37FA151BABA3440017F968 /* AppDelegate.swift in Sources */,

@@ -9,11 +9,17 @@
 import UIKit
 
 class ThirdViewController: UIViewController {
-
+    var rateButtons = [UIButton]()
+    var rating = 0
 
     @IBAction func doDismiss(sender: AnyObject) {
+        if rating == 0{
+            var alert = UIAlertController(title: "Alert", message: "This profile has no rating", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Rate them!", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        } else {
         self.presentingViewController!.dismissViewControllerAnimated(
-            true, completion: nil)
+            true, completion: nil)}
     }
     let sdView = UIImageView(image: UIImage(named: "sdview"))
     let vl = UIImageView(image: UIImage(named: "violin-color"))
@@ -42,7 +48,7 @@ class ThirdViewController: UIViewController {
         var visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .Light)) as UIVisualEffectView
         
         visualEffectView.frame = n2.bounds
-        
+        addRating()
         n2.addSubview(visualEffectView)
         
         self.view.addSubview(n2)
@@ -111,6 +117,36 @@ class ThirdViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func addRating(){
+        var x = CGFloat(50)
+        var image = UIImage(named: "emptyStar")
+        for i in 0...4{
+            var tempButton = UIButton()
+            tempButton.frame = CGRectMake(x, 300, 40, 40)
+            //tempButton.backgroundColor = UIColor(patternImage:image!)
+            tempButton.setImage(image, forState: UIControlState.Normal)
+            tempButton.addTarget(self, action: "rate:", forControlEvents: UIControlEvents.TouchUpInside)
+            tempButton.tag = i
+            rateButtons.append(tempButton)
+            self.view.addSubview(tempButton)
+            x+=50
+        }
+    }
+    
+    func rate(sender : UIButton){
+        var emptyStar = UIImage(named: "emptyStar")
+        var filledStar = UIImage(named: "filledStar")
+        rating = sender.tag
+        for i in 0...4 {
+            if i <= sender.tag {
+                rateButtons[i].setImage(filledStar, forState: UIControlState.Normal)
+            } else {
+                rateButtons[i].setImage(emptyStar, forState : UIControlState.Normal)
+            }
+            
+        }
     }
     
 
