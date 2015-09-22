@@ -18,8 +18,27 @@ class DetailViewController: UIViewController,UIImagePickerControllerDelegate, UI
     @IBOutlet weak var languageText : UITextField!
     @IBOutlet weak var workText : UITextField!
 
+    @IBOutlet weak var hiddenButton: UIButton!
     var student : StudentModel?
 
+    @IBAction func doPresent(sender: AnyObject?) {
+        if (student?.name == "Shuai Yuan") {
+         let svc = SecondViewController(nibName: "SecondViewController", bundle: nil)
+            self.presentViewController(svc, animated:true, completion:nil)
+        }
+        else if (student?.name == "Ran Zhou") {
+           let svc = ThirdViewController(nibName: "ThirdViewController", bundle: nil)
+            self.presentViewController(svc, animated:true, completion:nil)
+        }
+        else {
+             let svc = FourthViewController(nibName: "FourthViewController", bundle: nil)
+            self.presentViewController(svc, animated:true, completion:nil)
+        }
+        
+    }
+    
+    
+    
     var detailItem: AnyObject? {
         didSet {
             // Update the view.
@@ -60,13 +79,21 @@ class DetailViewController: UIViewController,UIImagePickerControllerDelegate, UI
         languageText.textAlignment = NSTextAlignment.Center
         //if student!.workExp{
         if student != nil{
+            if student!.name == "Shuai Yuan" || student!.name == "TC Dong" || student!.name == "Ran Zhou"{
+            hiddenButton.hidden = false
+        }
+            else {
+            hiddenButton.hidden = true
+            }
             workText.text = student?.workPlace
         } else{
             workText.text = "None"
+            hiddenButton.hidden = true
         }
+    
         workText.userInteractionEnabled = false
         workText.textAlignment = NSTextAlignment.Center
-        
+    
 
 
     
@@ -98,7 +125,7 @@ class DetailViewController: UIViewController,UIImagePickerControllerDelegate, UI
         // Dismiss the picker if the user canceled.
         dismissViewControllerAnimated(true, completion: nil)
     }
-    /*
+    
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
         // The info dictionary contains multiple representations of the image, and this uses the original.
         let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
@@ -108,7 +135,7 @@ class DetailViewController: UIViewController,UIImagePickerControllerDelegate, UI
         //student!.image = selectedImage.description
         // Dismiss the picker.
         dismissViewControllerAnimated(true, completion: nil)
-    }*/
+    }
 
 }
 

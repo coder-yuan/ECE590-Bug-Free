@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F64458E1BB0D2C6002283EF /* CustomHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64458D1BB0D2C6002283EF /* CustomHeaderCell.swift */; };
 		3E37FA151BABA3440017F968 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E37FA141BABA3440017F968 /* AppDelegate.swift */; };
 		3E37FA171BABA3440017F968 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E37FA161BABA3440017F968 /* MasterViewController.swift */; };
 		3E37FA191BABA3440017F968 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E37FA181BABA3440017F968 /* DetailViewController.swift */; };
@@ -15,6 +16,16 @@
 		3E37FA211BABA3440017F968 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E37FA1F1BABA3440017F968 /* LaunchScreen.xib */; };
 		3E37FA2D1BABA3440017F968 /* StudentInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E37FA2C1BABA3440017F968 /* StudentInfoTests.swift */; };
 		3E37FA371BABA9C20017F968 /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E37FA361BABA9C20017F968 /* StudentModel.swift */; };
+		3E627AF91BB075AE0008F348 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E627AF71BB075AE0008F348 /* SecondViewController.swift */; };
+		3E627AFA1BB075AE0008F348 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E627AF81BB075AE0008F348 /* SecondViewController.xib */; };
+		3E627AFE1BB0866D0008F348 /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E627AFD1BB0866D0008F348 /* addViewController.swift */; };
+		3E627B011BB0992F0008F348 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E627AFF1BB0992F0008F348 /* ThirdViewController.swift */; };
+		3E627B021BB0992F0008F348 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E627B001BB0992F0008F348 /* ThirdViewController.xib */; };
+		3E627B051BB099470008F348 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E627B031BB099470008F348 /* FourthViewController.swift */; };
+		3E627B061BB099470008F348 /* FourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E627B041BB099470008F348 /* FourthViewController.xib */; };
+		3E627B081BB09E130008F348 /* DrawingforSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E627B071BB09E130008F348 /* DrawingforSecond.swift */; };
+		3E627B0A1BB09E380008F348 /* DrawingforThird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E627B091BB09E380008F348 /* DrawingforThird.swift */; };
+		3E627B0C1BB09E4F0008F348 /* DrawingforFourth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E627B0B1BB09E4F0008F348 /* DrawingforFourth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F64458D1BB0D2C6002283EF /* CustomHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderCell.swift; sourceTree = "<group>"; };
 		3E37FA0F1BABA3440017F968 /* StudentInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E37FA131BABA3440017F968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E37FA141BABA3440017F968 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +52,16 @@
 		3E37FA2B1BABA3440017F968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E37FA2C1BABA3440017F968 /* StudentInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInfoTests.swift; sourceTree = "<group>"; };
 		3E37FA361BABA9C20017F968 /* StudentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentModel.swift; path = ../StudentModel.swift; sourceTree = "<group>"; };
+		3E627AF71BB075AE0008F348 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = ../SecondViewController.swift; sourceTree = "<group>"; };
+		3E627AF81BB075AE0008F348 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SecondViewController.xib; path = ../SecondViewController.xib; sourceTree = "<group>"; };
+		3E627AFD1BB0866D0008F348 /* addViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
+		3E627AFF1BB0992F0008F348 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		3E627B001BB0992F0008F348 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		3E627B031BB099470008F348 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		3E627B041BB099470008F348 /* FourthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourthViewController.xib; sourceTree = "<group>"; };
+		3E627B071BB09E130008F348 /* DrawingforSecond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingforSecond.swift; sourceTree = "<group>"; };
+		3E627B091BB09E380008F348 /* DrawingforThird.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingforThird.swift; sourceTree = "<group>"; };
+		3E627B0B1BB09E4F0008F348 /* DrawingforFourth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingforFourth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +103,19 @@
 		3E37FA111BABA3440017F968 /* StudentInfo */ = {
 			isa = PBXGroup;
 			children = (
-				3E37FA361BABA9C20017F968 /* StudentModel.swift */,
+				3E627AFD1BB0866D0008F348 /* addViewController.swift */,
+				3E627AF71BB075AE0008F348 /* SecondViewController.swift */,
 				3E37FA141BABA3440017F968 /* AppDelegate.swift */,
 				3E37FA161BABA3440017F968 /* MasterViewController.swift */,
 				3E37FA181BABA3440017F968 /* DetailViewController.swift */,
 				3E37FA1A1BABA3440017F968 /* Main.storyboard */,
+				1F64458D1BB0D2C6002283EF /* CustomHeaderCell.swift */,
+				3E627AFF1BB0992F0008F348 /* ThirdViewController.swift */,
+				3E627B031BB099470008F348 /* FourthViewController.swift */,
 				3E37FA1D1BABA3440017F968 /* Images.xcassets */,
+				3E627AF81BB075AE0008F348 /* SecondViewController.xib */,
+				3E627B001BB0992F0008F348 /* ThirdViewController.xib */,
+				3E627B041BB099470008F348 /* FourthViewController.xib */,
 				3E37FA1F1BABA3440017F968 /* LaunchScreen.xib */,
 				3E37FA121BABA3440017F968 /* Supporting Files */,
 			);
@@ -96,7 +125,11 @@
 		3E37FA121BABA3440017F968 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3E37FA361BABA9C20017F968 /* StudentModel.swift */,
 				3E37FA131BABA3440017F968 /* Info.plist */,
+				3E627B071BB09E130008F348 /* DrawingforSecond.swift */,
+				3E627B091BB09E380008F348 /* DrawingforThird.swift */,
+				3E627B0B1BB09E4F0008F348 /* DrawingforFourth.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -199,8 +232,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E627AFA1BB075AE0008F348 /* SecondViewController.xib in Resources */,
 				3E37FA1C1BABA3440017F968 /* Main.storyboard in Resources */,
 				3E37FA211BABA3440017F968 /* LaunchScreen.xib in Resources */,
+				3E627B021BB0992F0008F348 /* ThirdViewController.xib in Resources */,
+				3E627B061BB099470008F348 /* FourthViewController.xib in Resources */,
 				3E37FA1E1BABA3440017F968 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +255,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E627B0A1BB09E380008F348 /* DrawingforThird.swift in Sources */,
+				1F64458E1BB0D2C6002283EF /* CustomHeaderCell.swift in Sources */,
+				3E627B081BB09E130008F348 /* DrawingforSecond.swift in Sources */,
 				3E37FA191BABA3440017F968 /* DetailViewController.swift in Sources */,
 				3E37FA371BABA9C20017F968 /* StudentModel.swift in Sources */,
 				3E37FA171BABA3440017F968 /* MasterViewController.swift in Sources */,
+				3E627B011BB0992F0008F348 /* ThirdViewController.swift in Sources */,
+				3E627B051BB099470008F348 /* FourthViewController.swift in Sources */,
+				3E627AF91BB075AE0008F348 /* SecondViewController.swift in Sources */,
+				3E627AFE1BB0866D0008F348 /* addViewController.swift in Sources */,
+				3E627B0C1BB09E4F0008F348 /* DrawingforFourth.swift in Sources */,
 				3E37FA151BABA3440017F968 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
